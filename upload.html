@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Productos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Subir Productos</h1>
+        <form id="productForm" enctype="multipart/form-data">
+            <h2>Agregar Producto</h2>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="price">Precio:</label>
+            <input type="number" id="price" name="price" step="0.01" required>
+
+            <label for="image">Imagen:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <button type="submit">Agregar Producto</button>
+            <p id="formStatus"></p>
+        </form>
+        <p id="formStatus"></p>
+    </div>
+    <script src="js/upload.js"></script>
+</body>
+</html>
